@@ -14,7 +14,7 @@ One code-review comment, a single line of 108 characters: it approves the pull r
 
 ## How it works
 
-`main.py` writes the comment to `/opt/output/entry.txt`. The program is fully deterministic: every run writes the exact same text, and it asserts the gate first — one line, 1–140 characters, no trailing newline.
+`main.py` writes the comment to `$MAKEFUN_OUTPUT_DIR/entry.txt` (default `/output/entry.txt`). The program is fully deterministic: every run writes the exact same text, and it asserts the gate first — one line, 1–140 characters, no trailing newline.
 
 ```sh
 python3 main.py
